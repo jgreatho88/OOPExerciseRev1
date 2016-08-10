@@ -26,12 +26,22 @@ class ViewController: UIViewController {
         
         
     }
+    
+    
+
+    
 
     @IBAction func player1Attack(sender: AnyObject) {
         
     }
 
     @IBAction func player2Attack(sender: AnyObject) {
+        
+        let game = Game()
+        
+        game.makeOrcDisappear()
+
+
         
     }
 
