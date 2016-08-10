@@ -9,19 +9,20 @@
 import Foundation
 import UIKit
 
-class Game: ViewController {
+class Game: ViewController{
     
     
 
-    func makeOrcDisappear() {
-        
-        orcLeft.hidden = true
-        soldierLeft.hidden = false
-        
-        
-    }
+//    func makeOrcDisappear() {
+//        orcLeft.hidden = true
+//        soldierRight.hidden = true
+//    }
+//
+//    func makeOrcReappear() {
+//        orcLeft.hidden = false
+//        soldierRight.hidden = false
+//    }
 
-    
     
 }
 

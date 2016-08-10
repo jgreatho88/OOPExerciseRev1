@@ -10,6 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    
+
+    
     @IBOutlet weak var orcRight: UIImageView!
     @IBOutlet weak var soldierRight: UIImageView!
     
@@ -27,23 +30,25 @@ class ViewController: UIViewController {
         
     }
     
+    func makeOrcDisappear() {
+        orcLeft.hidden = true
+        soldierRight.hidden = true
+    }
     
+    func makeOrcReappear() {
+        orcLeft.hidden = false
+        soldierRight.hidden = false
+    }
+
 
     
 
     @IBAction func player1Attack(sender: AnyObject) {
-        
+        makeOrcReappear()
     }
 
     @IBAction func player2Attack(sender: AnyObject) {
-        
-        let game = Game()
-        
-        game.makeOrcDisappear()
-
-
-        
-    }
-
+        makeOrcDisappear()
 }
 
+}
