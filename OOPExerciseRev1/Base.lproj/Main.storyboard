@@ -27,12 +27,21 @@
                                     <constraint firstAttribute="height" constant="62" id="aM7-eY-MfK"/>
                                 </constraints>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="text-holder" translatesAutoresizingMaskIntoConstraints="NO" id="4ND-w0-ymv">
+                                <rect key="frame" x="100" y="551" width="400" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="420" id="auW-1L-9Fs"/>
+                                    <constraint firstAttribute="height" constant="45" id="iSA-98-RRj"/>
+                                </constraints>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="orcRight" translatesAutoresizingMaskIntoConstraints="NO" id="msk-Nq-oYL">
                                 <rect key="frame" x="415" y="311" width="165" height="236"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="165" id="8cy-od-FYU"/>
                                     <constraint firstAttribute="width" constant="140" id="B7V-B8-PbY"/>
-                                    <constraint firstAttribute="height" constant="236" id="GWo-9k-T7X"/>
+                                    <constraint firstAttribute="height" constant="236" id="GWo-9k-T7X">
+                                        <variation key="heightClass=compact-widthClass=regular" constant="236"/>
+                                    </constraint>
                                     <constraint firstAttribute="height" constant="202" id="Jsa-mE-6y5"/>
                                     <constraint firstAttribute="width" constant="140" id="Zvv-fu-MYY"/>
                                     <constraint firstAttribute="height" constant="200" id="bAu-bJ-qAw">
@@ -92,35 +101,7 @@
                                     <rect key="frame" x="410" y="62" width="257" height="276"/>
                                 </variation>
                             </imageView>
-                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="soldierLeft" translatesAutoresizingMaskIntoConstraints="NO" id="qjP-J2-Qek">
-                                <rect key="frame" x="20" y="271" width="257" height="276"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="257" id="Cx7-k4-SFq"/>
-                                    <constraint firstAttribute="height" constant="228" id="IDc-Cc-cUK">
-                                        <variation key="heightClass=compact-widthClass=compact" constant="210"/>
-                                    </constraint>
-                                    <constraint firstAttribute="width" constant="257" id="N0f-eF-gJf"/>
-                                    <constraint firstAttribute="height" constant="276" id="TvT-il-ffC"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="IDc-Cc-cUK"/>
-                                        <exclude reference="N0f-eF-gJf"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=compact-widthClass=compact">
-                                    <mask key="constraints">
-                                        <exclude reference="Cx7-k4-SFq"/>
-                                        <include reference="IDc-Cc-cUK"/>
-                                        <include reference="N0f-eF-gJf"/>
-                                        <exclude reference="TvT-il-ffC"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
-                                    <rect key="frame" x="410" y="62" width="257" height="276"/>
-                                </variation>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="orcLeft" translatesAutoresizingMaskIntoConstraints="NO" id="vUY-RA-Ajr">
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="orcLeft" translatesAutoresizingMaskIntoConstraints="NO" id="vUY-RA-Ajr">
                                 <rect key="frame" x="20" y="311" width="165" height="236"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="236" id="Hca-J1-lCA"/>
@@ -157,12 +138,33 @@
                                     </mask>
                                 </variation>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="text-holder" translatesAutoresizingMaskIntoConstraints="NO" id="4ND-w0-ymv">
-                                <rect key="frame" x="100" y="551" width="400" height="45"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="soldierLeft" translatesAutoresizingMaskIntoConstraints="NO" id="qjP-J2-Qek">
+                                <rect key="frame" x="20" y="271" width="257" height="276"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="420" id="auW-1L-9Fs"/>
-                                    <constraint firstAttribute="height" constant="45" id="iSA-98-RRj"/>
+                                    <constraint firstAttribute="width" constant="257" id="Cx7-k4-SFq"/>
+                                    <constraint firstAttribute="height" constant="228" id="IDc-Cc-cUK">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="210"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="257" id="N0f-eF-gJf"/>
+                                    <constraint firstAttribute="height" constant="276" id="TvT-il-ffC"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="IDc-Cc-cUK"/>
+                                        <exclude reference="N0f-eF-gJf"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <mask key="constraints">
+                                        <exclude reference="Cx7-k4-SFq"/>
+                                        <include reference="IDc-Cc-cUK"/>
+                                        <include reference="N0f-eF-gJf"/>
+                                        <exclude reference="TvT-il-ffC"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
+                                    <rect key="frame" x="410" y="62" width="257" height="276"/>
+                                </variation>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zWZ-eW-0cL" userLabel="attack2">
                                 <rect key="frame" x="441" y="227" width="113" height="41"/>
@@ -171,6 +173,9 @@
                                     <constraint firstAttribute="height" constant="41" id="gBU-AX-Zbv"/>
                                 </constraints>
                                 <state key="normal" image="player2attackbtn"/>
+                                <connections>
+                                    <action selector="player2Attack:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q0C-Ug-GfL"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mzz-d5-SMh" userLabel="attack1">
                                 <rect key="frame" x="46" y="222" width="113" height="41"/>
@@ -179,6 +184,9 @@
                                     <constraint firstAttribute="height" constant="41" id="ctg-h9-WMh"/>
                                 </constraints>
                                 <state key="normal" image="player1attackbtn"/>
+                                <connections>
+                                    <action selector="player1Attack:" destination="BYZ-38-t0r" eventType="touchUpInside" id="weM-3S-PTk"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -273,6 +281,14 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="attackBtn1" destination="mzz-d5-SMh" id="Hhr-7D-GHh"/>
+                        <outlet property="attackBtn2" destination="zWZ-eW-0cL" id="uK1-nD-Qyf"/>
+                        <outlet property="orcLeft" destination="vUY-RA-Ajr" id="Qzi-Qz-iDc"/>
+                        <outlet property="orcRight" destination="msk-Nq-oYL" id="kgi-dd-g9M"/>
+                        <outlet property="soldierLeft" destination="qjP-J2-Qek" id="j7P-AC-4qB"/>
+                        <outlet property="soldierRight" destination="4hm-UW-Y5u" id="fa1-5X-vHX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

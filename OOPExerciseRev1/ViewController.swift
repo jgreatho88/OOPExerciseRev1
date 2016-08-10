@@ -9,17 +9,31 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var orcRight: UIImageView!
+    @IBOutlet weak var soldierRight: UIImageView!
+    
+    @IBOutlet weak var soldierLeft: UIImageView!
+    @IBOutlet weak var orcLeft: UIImageView!
+    
+    @IBOutlet weak var attackBtn2: UIButton!
 
+    @IBOutlet weak var attackBtn1: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func player1Attack(sender: AnyObject) {
+        
     }
 
+    @IBAction func player2Attack(sender: AnyObject) {
+        
+    }
 
 }
 
